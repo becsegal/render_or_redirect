@@ -4,7 +4,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "version"
 
 Gem::Specification.new do |s|
-  s.name = "render_or_redirect_gem"
+  s.name = "render_or_redirect"
   s.version = RenderOrRedirect::VERSION
   s.summary = %q{Render based on format. If a redirect specified, will redirect for html format, otherwise includes url in response for a json response.}
   s.files = Dir["{lib}/**/*"] + ["README"]
