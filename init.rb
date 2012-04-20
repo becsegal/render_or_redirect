@@ -1,0 +1,1 @@
+require 'render_or_redirect'

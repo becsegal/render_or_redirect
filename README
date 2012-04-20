@@ -1,0 +1,3 @@
+Include in Gemfile:
+
+gem "render_or_redirect", :git => "git://github.com/becarella/render_or_redirect.git"
