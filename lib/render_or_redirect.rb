@@ -7,7 +7,7 @@ module RenderOrRedirect
           redirect_options = response ? {:error => response[:error], :notice => response[:notice]} : {}
           redirect_to options[:redirect_url], redirect_options
         else
-          @response = response
+          @data = response
           render options
         end
       }
@@ -15,6 +15,14 @@ module RenderOrRedirect
         render options.merge({:json => {:data => response.as_json}})
       }
     end
+  end  
+  
+  def pretty_errors errors
+    perrors = {}
+    errors.each do |key, value|
+      perrors[key] = "#{key.to_s.capitalize} #{value}"
+    end
+    perrors
   end
 end
 
