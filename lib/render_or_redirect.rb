@@ -12,7 +12,7 @@ module RenderOrRedirect
         end
       }
       format.json {
-        render options.merge({:json => {:data => response.as_json}})
+        render options.merge({:json => {:data => response.as_json, :extra => options}})
       }
     end
   end  

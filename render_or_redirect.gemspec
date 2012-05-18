@@ -10,4 +10,8 @@ Gem::Specification.new do |s|
   s.files = Dir["{lib}/**/*"] + ["README"]
   s.require_paths = ["lib"]
   s.add_dependency "rails", "~> 3.1.1"
+  
+  s.add_development_dependency "rspec-rails"
+  s.add_development_dependency "guard-rspec"
+  s.add_development_dependency "guard-spork"
 end
